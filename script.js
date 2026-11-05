@@ -12,3 +12,8 @@ function escrevendoLetra() {
 }
 
 escrevendoLetra();
+
+const ativaMenu = document.querySelector('.fa-bars')
+ativaMenu.addEventListener('click',()=>(
+    ativaMenu.classList.toggle('fa-x')
+))

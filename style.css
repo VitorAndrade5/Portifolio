@@ -300,3 +300,101 @@ header i {
 .sobre_conteudo {
     grid-column: 1/-1;
 } 
+
+/* secao services */
+
+.services {
+    margin-top: -30px;
+    padding: 60px;
+    background-color: #000000;
+    
+}
+
+.my_services {
+    padding: 20px;
+    color: white;
+}
+
+.my_services ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.my_services ul li  {
+    cursor: pointer;
+    position: relative;
+    flex: 1 1 280px;
+    max-width: 350px;
+    align-content: center;
+    height: 350px;
+    padding: 25px;
+    display: grid;
+    gap: 30px;
+    text-align: center;
+    background-color: #454649;
+    border-radius: 10px;
+
+}
+
+.my_services ul li i {
+    font-size: 2rem;
+    color: #c5bfbf;
+    
+}
+
+.my_services ul li h3 {
+    color: #f7f7f7;
+    font-size: 1.3 rem;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 500;
+}
+
+.my_services ul li p {
+    font-size: 1.1rem;
+    color: #c5bfbf;
+    
+}
+
+.my_services li::before {
+    content: '';
+    transition: .5s ease-in-out;
+    border-radius: 11px;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: -1px;
+    right: -1;
+    border-top: 2px solid transparent;
+    border-right: 2px solid transparent ;
+}
+
+.my_services li::after {
+    content: '';
+    transition: .5s ease-in-out;
+    border-radius: 11px;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    bottom: -2px;
+    left: -2;
+    border-bottom: 2px solid transparent;
+    border-left: 2px solid transparent ;
+}
+
+.my_services li:hover::before{
+    width: 100%;
+    height: 100%;
+    border-top: 2px solid rgb(216, 210, 210);
+    border-right: 2px solid rgb(216, 210, 210);
+}
+
+.my_services li:hover::after{
+    width: 100%;
+    height: 100%;
+    border-bottom: 2px solid rgb(216, 210, 210);
+    border-left: 2px solid rgb(216, 210, 210);
+
+}
