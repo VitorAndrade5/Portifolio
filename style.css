@@ -11,6 +11,7 @@
 }
 
 body {
+    background-color: #000;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -124,5 +125,151 @@ header .Navegação-primaria li a {
         transform: translate3d (0, 0, 0);
 
     } 
+}
+
+/* SESSÇÃO PRINCIPAL SOBRE MIM */
+
+main {
+    background-color: #000000;
+    color: white;
+}
+
+main .Sobre {
+    animation: sobeSecao .9s ease-in-out forwards;
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    justify-content: center;
+    padding: 30px;
+
+}
+
+.sobre_titulo {
+    margin: 30px 0;
+    grid-column: 1/-1;
+    text-align: center;
+    color: #c5bfbf;
+}
+
+.sobre_titulo h1 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 2.5rem;
+    color: white;
+
+}
+
+p {
+    font-family: 'Libre Baskerville', serif;
+    color: #e6e6e6;
+    font-size: 1.2rem;
+}
+
+.perfilpf {
+    font-family: 'Libre Baskerville', serif;
+    color: #c5bfbf;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.sobre_paragrafo {
+    font-family: 'Libre Baskerville', serif;
+    color: #c5bfbf;
+    font-size: 1.2rem;
+}
+
+.sobre_titulo div {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.sobre_titulo span {
+    display: block;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #37405a;
+
+}
+.sobre_info {
+    grid-column: 1/-1;
+    display: grid;
+
+
+}
+
+
+.fotodeperfil {
+
+border-radius: 400px;
+border: 3px solid #4e4e4e;
+    padding: 4px; /* Cria um espaço entre a borda e a imagem */
+    background-color: #ffffff;
+    filter: brightness(0.9) contrast(1.1);
+    box-shadow: 0px 8px 95px rgba(134, 130, 130, 0.4);
+
+}
+
+.fotodeperfil {
+    animation: ladoSecao .9s ease-in-out forwards;
+    border-radius: 400px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.fotodeperfil:hover {
+    transform: scale(1.05); /* Aumenta 5% */
+    box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.6);
+}
+
+.sobre_texto h1::after {
+    background-color: #f7f7f7;
+    height: 6px;
+    width: 100px;
+    margin: 20px 0;
+    content: '';
+    display: block;
+    border-radius: 10px;
+}
+
+.sobre_info {
+    gap: 15px;
+
+}
+
+.sobre_info i {
+    color: #454649;
+    display: inline block;
+    padding-right: 15px;
+    font-size: 1.2rem;
+}
+
+.sobre_info p {
+    font-size: .9rem;
+}
+
+@keyframes sobeSecao {
+    from {
+        opacity: 0;
+        transform: translate3d(60px, 0, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes ladoSecao {
+    from {
+        opacity: 0;
+        translate: -60px 0;
+    }
+
+    to {
+        opacity: 1;
+        translate: 0 0;
+    }
 }
 
