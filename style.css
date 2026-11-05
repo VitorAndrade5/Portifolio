@@ -36,16 +36,38 @@ header span {
 
 header .Navegação-primaria {
     display: flex;
-    gap: 10px;
+    gap: 30px;
     align-items: center;
 }
 
 header .Navegação-primaria li a {
-    padding: 10px;
     color: white;
+    width: 0px;
+    height: 0px;
     font-size: 1.3rem;
     
 }
+
+header .Navegação-primaria li a::after {
+    content: '';
+    width: 10px;
+    height: 0px;
+    display: block;
+    border-bottom:  4px solid transparent;
+    transition: .9s;
+
+
+}
+
+header .Navegação-primaria li a:hover::after{
+    width: 100%;
+    height: 0px;
+    padding: 0px;
+    border-bottom: 3px solid #5e5c5c;
+    border-radius: 10px;
+}
+
+
 
 /* DOWNLOAD CV SEÇÃO */
 
@@ -273,22 +295,46 @@ border: 3px solid #4e4e4e;
 
 /* RESPOSIVIDADE */
 
+header i.fa-solid {
+    display: none;
+    color: #f7f7f7;
+    font-size: 1.5rem;
+}
+
 @media (max-width: 838px){
     .section-div img {
         display: none;
     }
+
+    header .Navegação-primaria {
+        display: none;
+    }
+
+    header i.fa-solid {
+        display: block;
+    }
 }
 
-header .Navegação-primaria{
-
-    display: none;
-    
+header {
+    justify-content: space-between;
+    padding: 30px 70px;
 }
 
-header i {
-    color: #f7f7f7;
-    font-size: 1.5rem;
+header .Navegação-primaria.ativado{
+    background: linear-gradient(rgba(7, 7, 7, 0),rgba(87, 81, 81, 0.411));
+    position: absolute;
+    display: grid;
+    top: 50px;
+    color: white;
+    z-index: 1;
+    padding: 30px;
+    font-size: 1.0rem;
+    font-weight: bold;
+    border-radius: 0 0 5px 5px;
+    right: 0;
+    animation: sobeSecao .8s ease-in-out forwards;
 }
+
 
 @media (max-width: 900px){
     .sobre img {
@@ -329,7 +375,8 @@ header i {
     flex: 1 1 280px;
     max-width: 350px;
     align-content: center;
-    height: 350px;
+    min-height: 350px;
+    height: auto;
     padding: 25px;
     display: grid;
     gap: 30px;
@@ -360,7 +407,7 @@ header i {
 
 .my_services li::before {
     content: '';
-    transition: .5s ease-in-out;
+    transition: .3s ease-in-out;
     border-radius: 11px;
     width: 0px;
     height: 0px;
@@ -373,7 +420,7 @@ header i {
 
 .my_services li::after {
     content: '';
-    transition: .5s ease-in-out;
+    transition: .3s ease-in-out;
     border-radius: 11px;
     width: 0px;
     height: 0px;
@@ -397,4 +444,19 @@ header i {
     border-bottom: 2px solid rgb(216, 210, 210);
     border-left: 2px solid rgb(216, 210, 210);
 
+}
+
+@media (max-width: 600px) {
+    .services {
+        padding: 30px 15px;
+    }
+
+    .my_services {
+        padding: 10px;
+    }
+
+    .my_services ul li {
+        gap: 15px;
+        padding: 20px;
+    }
 }
