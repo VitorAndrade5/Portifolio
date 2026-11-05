@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap');
 
 
@@ -92,7 +91,6 @@ header .Navegação-primaria li a {
 .section-div img {
     max-width: 400px;
 }
-
 
 .Digitando::after {
     content: '|';
@@ -273,3 +271,32 @@ border: 3px solid #4e4e4e;
     }
 }
 
+/* RESPOSIVIDADE */
+
+@media (max-width: 838px){
+    .section-div img {
+        display: none;
+    }
+}
+
+header .Navegação-primaria{
+
+    display: none;
+    
+}
+
+header i {
+    color: #f7f7f7;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 900px){
+    .sobre img {
+        grid-column: 1/-1;
+        justify-self: center ;
+    }
+}
+
+.sobre_conteudo {
+    grid-column: 1/-1;
+} 

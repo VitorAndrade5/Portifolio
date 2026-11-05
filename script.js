@@ -1,21 +1,14 @@
-function ativaLetras(elemento) {
-    const arrTexto = elemento.innerHTML.split('');
-    elemento.innerHTML = '';
-    arrTexto.forEach((letra, i)=>{
-        setTimeout(() =>{
-            elemento.innerHTML += letra;
-        }, 120 * i)
-    })
+function escrevendoLetra() {
+    const titulo = document.querySelector('.Digitando');
+    if (!titulo) return;
 
+    const texto = Array.from(titulo.textContent);
+    titulo.textContent = '';
+    texto.forEach((letra, i) => {
+        setTimeout(() => {
+            titulo.textContent += letra;
+        }, 100 * i);
+    });
 }
 
-
-
-
-const titulo = document.querySelector('.Digitando');
-/*const sobre = document.querySelector('.Sobre');*/
-
-ativaLetras(titulo);
-/*ativaLetras(sobre);*/
-
-
+escrevendoLetra();
