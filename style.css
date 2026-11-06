@@ -44,7 +44,8 @@ header .Navegação-primaria li a {
     color: white;
     width: 0px;
     height: 0px;
-    font-size: 1.3rem;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.0rem;
     
 }
 
@@ -105,8 +106,9 @@ header .Navegação-primaria li a:hover::after{
     justify-self: start;
     color: #c5bfbf;
     padding: 15px 40px;
+    font-family:'Libre Baskerville', serif ;
     
-    border-radius: 5px;
+    border-radius: 10px;
     border: 2px solid #c5bfbf;
 }
 
@@ -195,7 +197,7 @@ p {
 
 .sobre_paragrafo {
     font-family: 'Libre Baskerville', serif;
-    color: #c5bfbf;
+    color: #5e5c5c;
     font-size: 1.2rem;
 }
 
@@ -245,7 +247,7 @@ border: 3px solid #4e4e4e;
 
 .sobre_texto h1::after {
     background-color: #f7f7f7;
-    height: 6px;
+    height: 4px;
     width: 100px;
     margin: 20px 0;
     content: '';
@@ -459,4 +461,149 @@ header .Navegação-primaria.ativado{
         gap: 15px;
         padding: 20px;
     }
+}
+
+.my_resume {
+    color: #f7f7f7;
+}
+
+.resume_sections {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 60px;
+    align-items: start;
+    padding: 0 30px;
+}
+
+.resume_generico {
+    min-width: 0;
+}
+
+.resume_generico h2 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.35rem;
+    color: #fff;
+    background-color: #525050;
+    width: fit-content;
+    margin: 0 0 30px;
+    padding: 10px;
+    border-radius: 7px;
+}
+
+.resume_generico h2 i {
+    margin-right: 10px;
+}
+
+.experience_content {
+    display: grid;
+    gap: 8px;
+}
+
+.experience_content span {
+    font-size: 0.9rem;
+}
+
+.experience_content h3 {
+    font-size: 1rem;
+    margin: 2px 0;
+}
+
+.experience_content p {
+    font-size: 0.85rem;
+    line-height: 1.4;
+}
+
+@media (max-width: 700px) {
+    .resume_sections {
+        grid-template-columns: 1fr;
+        padding: 0 15px;
+        gap: 35px;
+    }
+}
+
+
+
+.experience_content ul {
+    color: #5e5c5c;
+    gap: 10px;
+    display: flex;
+    cursor: pointer;
+    margin-top: 20px;
+    justify-content: center;
+
+}
+
+.experience_section .experience_content > div {
+    background-color: #312f2f;
+    padding: 40px;
+    position: relative;
+}
+
+.experience_section .experience_content > div::before {
+  content: '';
+  border-right: 30px solid transparent;
+  border-bottom: 30px solid #312f2f;
+  position: absolute;
+  top: -20px;
+  left: 30px;
+  display: inline-block;
+}
+
+.resume_generico .experience_content div span {
+    color: #e6e6e6;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.resume_generico .experience_content div h3 {
+    font-family: 'Libre Baskerville', serif;
+    margin: 10px 0;
+}
+
+.resume_generico .experience_content div p {
+    color: #8e9199;
+    font-size: 1.1rem;
+}
+
+
+/*meus diplomas e cursos*/
+
+.resume_generico .education_content div {
+    background-color: #312f2f;
+    padding: 40px;
+    position: relative;
+
+}
+
+.education_content ul {
+    color: #5e5c5c;
+    gap: 10px;
+    display: flex;
+    cursor: pointer;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.resume_generico .education_content > div::before {
+  content: '';
+  border-right: 30px solid transparent;
+  border-bottom: 30px solid #312f2f;
+  position: absolute;
+  top: -20px;
+  left: 30px;
+  display: inline-block;
+}
+
+.resume_generico .education_content div span {
+    color: #e6e6e6;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.resume_generico .education_content div h3 {
+    font-family: 'Libre Baskerville', serif;
+    margin: 10px 0;
+}
+
+.resume_generico .education_content div p {
+    color: #8e9199;
+    font-size: 1.1rem;
 }
