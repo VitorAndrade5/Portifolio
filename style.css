@@ -1,3 +1,5 @@
+
+
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap');
 
 
@@ -64,7 +66,7 @@ header .Navegação-primaria li a:hover::after{
     width: 100%;
     height: 0px;
     padding: 0px;
-    border-bottom: 3px solid #5e5c5c;
+    border-bottom: 3px solid #37405a;
     border-radius: 10px;
 }
 
@@ -230,7 +232,7 @@ border: 3px solid #4e4e4e;
     padding: 4px; /* Cria um espaço entre a borda e a imagem */
     background-color: #ffffff;
     filter: brightness(0.9) contrast(1.1);
-    box-shadow: 0px 8px 95px rgba(134, 130, 130, 0.4);
+    box-shadow: 0px 8px 95px #3a4b80bd;
 
 }
 
@@ -261,7 +263,7 @@ border: 3px solid #4e4e4e;
 }
 
 .sobre_info i {
-    color: #454649;
+    color: #37405a;
     display: inline block;
     padding-right: 15px;
     font-size: 1.2rem;
@@ -383,7 +385,7 @@ header .Navegação-primaria.ativado{
     display: grid;
     gap: 30px;
     text-align: center;
-    background-color: #454649;
+    background-color: #37405a;
     border-radius: 10px;
 
 }
