@@ -80,3 +80,20 @@ function sobreMim(){
     slideShowExperience(0);
 }
 sobreMim();
+
+const listaALL = document.querySelectorAll('.project_amarzenamento ul li');
+const buttonGeral = document.querySelectorAll('.project_navegacao ul li');
+const buttonAll = document.querySelectorAll('.project_models .all');
+
+function removeClick (index){
+    buttonGeral.forEach((item)=>{
+        item.classList.remove('ativo')
+    });
+    buttonGeral[index].classList.add('ativo');
+}
+
+buttonGeral.forEach((item,index)=>{
+    item.addEventListener('click',()=>{
+        removeClick(index);
+    })
+})
