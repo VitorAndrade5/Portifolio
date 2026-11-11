@@ -1,7 +1,7 @@
-
-
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap');
-
+html {
+    scroll-behavior: smooth;
+}
 
 *{
    padding: 0;
@@ -145,11 +145,11 @@ header .Navegação-primaria li a:hover::after{
 @keyframes inicializar {
     from{
         opacity: 0;
-        transform: translate3d (0, -60px, 0);
+        transform: translate3d(-60px, 0, 0);
     }
     to{
         opacity: 1;
-        transform: translate3d (0, 0, 0);
+        transform: translate3d(0, 0, 0);
 
     } 
 }
@@ -679,6 +679,12 @@ header .Navegação-primaria.ativado{
     color: #9c9696;
 }
 
+.projects_models ul li.ativo {
+    background-color: #4d4d4d;
+    color: #000000;
+    font-weight: bold;
+}
+
 .projects_armazenamento ul {
     display: grid;
     margin-top: 60px;
@@ -687,15 +693,23 @@ header .Navegação-primaria.ativado{
     grid-template-columns: repeat(4, 1fr);
 }
 
+
 .projects_armazenamento ul li {
+    display: none;
     max-width: 100%;
     height: 100%;
+}
+
+.projects_armazenamento ul li.ativo {
+    display: block;
+    animation: animationImagemButton 0s ease-in-out forwards;
 }
 
 .projects_armazenamento ul li img {
     max-width: 100%;
     height: 100%;
-    border-radius: 5px;
+    
+    border-radius: 2px;
     cursor: pointer;
 }
 
@@ -710,3 +724,49 @@ header .Navegação-primaria.ativado{
     color: #555555;
 }
 
+@keyframes animationImagemButton {
+    0%{
+        opacity: 0;
+        transform: translate3d(-90px, 0, 0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}    
+
+footer {
+    background-color: #000;
+    padding: 10px;
+}
+
+.footer_sociais {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+    color: #26345c;
+}
+
+.footer_sociais a {
+    text-decoration: none;
+    color: #bbb4b4;
+}
+
+.footer_sociais li i {
+    cursor: pointer;
+    padding: 30px;
+    font-size: 1.5rem;
+}
+
+.footer_sociais li {
+    cursor: pointer;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.footer_comercial {
+    color: #555555;
+}
