@@ -12,11 +12,13 @@
         <h1>Port<span>fólio</span></h1>
         <nav>
             <ul aria-label="navegação primaria" class="Navegação-primaria">
+                <li><a href="#home">Home</a></li>
                 <li><a href="#about">Sobre</a></li>
                 <li><a href="#educacao">Formação</a></li>
-                <li><a href="Portifolio">Portifólio</a></li>
-                <li><a href="Princing">Pricing</a></li>
-                <li><a href="Contato">Contato</a></li>
+                <li><a href="#expe">Portifólio</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                
             </ul>
             <i class = "fa-solid fa-bars"></i>
         </nav>
@@ -32,8 +34,8 @@
     </section>
 
     <main>
-        <article id="about" aria-label="Seção sobre mim" class="Sobre">
-            <div class="sobre_titulo">
+        <article aria-label="Seção sobre mim" class="Sobre">
+            <div id="about" class="sobre_titulo">
             <h1>Sobre Mim</h1>
             <p class="perfilpf">Perfil Profissional</p>
             <div arial-label="Seção apenas de ilustração sobre mim">
@@ -114,7 +116,7 @@
                 </ul>
             </div>
     </section>
-    <div class="my_resume">
+    <div id="expe" class="my_resume">
         <div class="sobre_titulo">
             <h1>Resume</h1>
             <p class="perfilpf">Trajetória Acadêmica e Fundamentos Técnicos</p>
@@ -178,50 +180,44 @@
                 </div>
             </div>
     </div>
-    <section class="projects">
+    <div id="contato" class = "sobre_titulo">
+         <h3>CONTATOS</h3>
+         <nav aria-label="navegação de links sociais">
+             <ul class="footer_sociais">
+                 <li><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/vito-andrade-50044335a/">Linkedin</a></li>
+                 <li><i class="fa-brands fa-github"></i> <a href="https://github.com/VitorAndrade5">Github</a></li>
+                 <li><i class="fa-brands fa-instagram"></i> <a href="https://www.instagram.com/vitoandrade7/">Instagram</a></li>
+                 <li><i class="fa-brands fa-whatsapp"></i> <a href="https://api.whatsapp.com/send/?phone=5563992769643&text&type=phone_number&app_absent=0">WhatsApp</a></li>
+             </ul>
+         </nav>
+    </div>     
+    <section id="projetos" class="projects">
         <div class="sobre_titulo">
             <h1>Projetos</h1>
             <p class="perfilpf">Trabalhos Recentes & Estudos de Caso</p>
             <div arial-label="Seção apenas de ilustração sobre mim">
             </div>
         </div>
-        <div class="projects_models">
-            <ul aria-label="Navegação entre modelos especificos">
-                <li class="all">Todos</li>
-                <li class="design">Design</li>
-                <li class="graphic">Graphic</li>
-                <li class="websites">websites</li>
-            </ul>
-        </div>
+        <div id="project-filters" class="projects_models"></div>
         <div class="projects_armazenamento">
             <ul aria-label="Navegação de projetos e websites">
-                <li id="design"><img src="assets/programacao2.png" alt="imagem projeto"/></li>
-                <li id="design"><img src="assets/programacao2.png" alt="imagem projeto"/></li>
-                <li id="graphic"><img src="assets/programacao2.png" alt="imagem projeto"/></li>
-                <li id="websites"><img src="assets/programacao2.png" alt="imagem projeto"/></li>
-                <li id="websites"><img src="assets/programacao2.png" alt="imagem projeto"/></li>
-                <li id="websites"><img src="assets/programacao2.png" alt="imagem projeto"/></li>
-                <li id="websites"><img src="assets/programacao2.png" alt="imagem projeto"/></li>
-                <li id="websites"><img src="assets/programacao2.png" alt="imagem projeto"/></li>
+                <li id="design" class="ativo"><img src="assets/programacao2.png" alt="imagem projeto"/></li>
+                <li id="design" class="ativo"><img src="assets/programacao2.png" alt="imagem projeto"/></li>
+                <li id="graphic" class="ativo"><img src="assets/programacao2.png" alt="imagem projeto"/></li>
+                <li id="websites" class="ativo"><img src="assets/programacao2.png" alt="imagem projeto"/></li>
+                <li id="websites" class="ativo"><img src="assets/programacao2.png" alt="imagem projeto"/></li>
+                <li id="websites" class="ativo"><img src="assets/programacao2.png" alt="imagem projeto"/></li>
+                <li id="websites" class="ativo"><img src="assets/programacao2.png" alt="imagem projeto"/></li>
+                <li id="websites" class="ativo"><img src="assets/programacao2.png" alt="imagem projeto"/></li>
             </ul>
         </div>
         <a href="https://github.com/VitorAndrade5">Ver mais projetos</a>
     </section>
     <footer>
-        <div class = "sobre_titulo">
-            <h1>Portfólio</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa minus quia molestiae, fugit, voluptates ipsa ad libero ex voluptatum ab </p>
-            <nav aria-label="navegação de links sociais">
-                <ul class="footer_sociais">
-                    <li><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/vito-andrade-50044335a/">Linkedin</a></li>
-                    <li><i class="fa-brands fa-github"></i> <a href="https://github.com/VitorAndrade5">Github</a></li>
-                    <li><i class="fa-brands fa-instagram"></i> <a href="https://www.instagram.com/vitoandrade7/">Instagram</a></li>
-                    <li><i class="fa-brands fa-whatsapp"></i> <a href="https://api.whatsapp.com/send/?phone=5563992769643&text&type=phone_number&app_absent=0">WhatsApp</a></li>
-                </ul>
-            </nav>
-            <p class="footer_commercial"> &copy; 2026</p>
-        </div>
+            <p class="footer_commercial"> &copy; 2026 VITO ANDRADE. Todos os direitos reservados.</p>
+            <a href="#home" class="footer_voltar">VOLTAR AO TOPO<i class="fa-solid fa-up-long"></i></a>
     </footer>
-    <script src="script.js"></script>
+    <script type="module" src="/src/main.jsx"></script>
+    <script type="module" src="/script.js"></script>
 </body>
 </html>
