@@ -1,5 +1,21 @@
 import { createRoot } from 'react-dom/client';
 import RubberSegment from '../RubberSegment.jsx';
+import StaggeredMenu from './StaggeredMenu.jsx';
+
+const menuItems = [
+  { label: 'Home', ariaLabel: 'Ir para o início', link: '#home' },
+  { label: 'Sobre', ariaLabel: 'Conheça sobre mim', link: '#about' },
+  { label: 'Formação', ariaLabel: 'Ver minha formação', link: '#educacao' },
+  { label: 'Portfólio', ariaLabel: 'Ver experiência e portfólio', link: '#expe' },
+  { label: 'Contato', ariaLabel: 'Ir para contatos', link: '#contato' },
+  { label: 'Projetos', ariaLabel: 'Ver projetos', link: '#projetos' }
+];
+
+const socialItems = [
+  { label: 'LinkedIn', link: 'https://www.linkedin.com/in/vito-andrade-50044335a/' },
+  { label: 'GitHub', link: 'https://github.com/VitorAndrade5' },
+  { label: 'WhatsApp', link: 'https://api.whatsapp.com/send/?phone=5563992769643&text&type=phone_number&app_absent=0' }
+];
 
 const projectFilters = [
   { value: 'all', label: 'Todos' },
@@ -18,6 +34,25 @@ function filterProjects(filter) {
 }
 
 const mountNode = document.querySelector('#project-filters');
+
+const menuMountNode = document.querySelector('#staggered-menu-root');
+
+if (menuMountNode) {
+  createRoot(menuMountNode).render(
+    <StaggeredMenu
+      position="right"
+      items={menuItems}
+      socialItems={socialItems}
+      displaySocials
+      displayItemNumbering
+      menuButtonColor="#ffffff"
+      openMenuButtonColor="#ffffff"
+      changeMenuColorOnOpen
+      colors={['#B497CF', '#5227FF']}
+      accentColor="#1b2c61"
+    />
+  );
+}
 
 if (mountNode) {
   createRoot(mountNode).render(

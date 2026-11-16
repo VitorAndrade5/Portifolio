@@ -14,20 +14,6 @@ function escrevendoLetra() {
 escrevendoLetra();
 
 
-//menu sanduiche//
-    function MenuMobol(){
-    const ativaMenu = document.querySelector('.fa-bars')
-    const navMenu = document.querySelector ('header .Navegação-primaria')
-
-    ativaMenu.addEventListener('click',()=>{
-        ativaMenu.classList.toggle('fa-bars');
-        ativaMenu.classList.toggle('fa-xmark');
-        navMenu.classList.toggle('ativado')
-    });
-}
-MenuMobol();
-
-
 //efeito slide//
 
 function sobreMim(){
