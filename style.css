@@ -316,6 +316,15 @@ header {
     transform: translateY(-4px) rotate(-45deg);
 }
 
+.staggered-menu__trigger.is-open {
+    position: fixed;
+    top: 20px;
+    right: 48px;
+    z-index: 3;
+    min-height: 44px;
+    padding: 10px 0;
+}
+
 .staggered-menu__backdrop {
     position: fixed;
     inset: 0;
@@ -447,6 +456,11 @@ header {
 }
 
 @media (max-width: 480px) {
+    .staggered-menu__trigger.is-open {
+        top: 16px;
+        right: 24px;
+    }
+
     .staggered-menu__panel {
         padding: 100px 24px 28px;
     }

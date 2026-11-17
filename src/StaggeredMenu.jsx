@@ -110,7 +110,6 @@ export default function StaggeredMenu({
             >
               <div className="staggered-menu__panel-header">
                 <a href="#home" onClick={() => setIsOpen(false)}>Vito Andrade</a>
-                <span aria-hidden="true">MENU</span>
               </div>
               <nav aria-label="Navegação principal">
                 <ul className="staggered-menu__items">
