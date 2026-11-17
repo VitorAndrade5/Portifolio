@@ -451,7 +451,67 @@ header {
     }
 
     header {
+        border: 0;
         padding: 20px 24px;
+    }
+
+    .projects_armazenamento ul {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+        margin-top: 36px;
+    }
+
+    .projects_armazenamento ul li img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 10;
+        object-fit: cover;
+        display: block;
+    }
+
+    .projects {
+        padding: 30px 16px;
+    }
+
+    .projects_models ul {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .projects_models ul li {
+        padding: 6px 12px;
+    }
+
+    #contato {
+        width: 100%;
+        padding-inline: 16px;
+    }
+
+    #contato nav {
+        width: 100%;
+    }
+
+    .footer_sociais {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px 8px;
+    }
+
+    .footer_sociais li {
+        min-width: 0;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        font-size: 0.95rem;
+    }
+
+    .footer_sociais li i {
+        width: 52px;
+        padding: 18px 10px;
+        text-align: center;
+        flex-shrink: 0;
     }
 }
 
@@ -463,6 +523,10 @@ header {
 
     .staggered-menu__panel {
         padding: 100px 24px 28px;
+    }
+
+    .staggered-menu__panel::before {
+        display: none;
     }
 }
 
